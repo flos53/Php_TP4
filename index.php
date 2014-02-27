@@ -13,16 +13,19 @@
         $oDb = new PDO($dsn, $dbUser, $dbPass);
         
         $oResultat = $oDb->query('SELECT * FROM promotion ORDER BY pro_nom ASC');
+        $oResultat->setFetchMode(PDO::FETCH_OBJ);
+//        
         
-//        $promotion = $oResultat->fetch();
-//        //var_dump($promotion);
-//        echo '<p>', $promotion['pro_nom'], '</p>';
-//        $promotion = $oResultat->fetch();
-//        echo $promotion[1];
+        //$oResultat->rowCount()  // affiche le nombre de lignes
         
-        while($promotion = $oResultat->fetch())
+        echo '<p>Liste des ' , $oResultat->rowCount(), ' promotions de l\'IIA : </p>';
+        
+        while($oPromotion = $oResultat->fetch())
         {
-            echo '<p>', $promotion['pro_nom'], '</p>';
+            echo '<p>';
+            echo '<a href="promotion.php?pro_id=' ,$oPromotion->pro_id, '">';            
+            echo $oPromotion->pro_nom, '</a>'; 
+            echo '</p>';
         }
         
         
