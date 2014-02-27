@@ -1,0 +1,31 @@
+
+			
+			body {
+				color: white;
+                                text-align:center;
+				font-family: Comic;
+                               
+				background: url('v.jpg') fixed 75% no-repeat;                                
+			}
+                                                                       
+                        div{
+                            
+                            
+                            text-align:center;
+                        }
+                        
+                        form{
+                            
+                            margin: auto;
+                            width: 300px;
+                            text-align:center;
+                        }
+                        
+                        
+                        
+
+
+
+
+
+
