@@ -20,12 +20,12 @@
         
         //Protège le paramètre recu dans l'URL(contre les injections)
         
-        $proId = $oDb->quote($_GET['pro_id']); 
-        //Envoie une requete au SGBD
-        $oResultat = $oDb->query('SELECT *'
-                                . ' FROM etudiant'
-                                . ' WHERE promotion_id = ' . $proId 
-                                . ' ORDER BY etu_nom, etu_prenom');
+//        $proId = $oDb->quote($_GET['pro_id']); 
+//        //Envoie une requete au SGBD
+//        $oResultat = $oDb->query('SELECT *'
+//                                . ' FROM etudiant'
+//                                . ' WHERE promotion_id = ' . $proId 
+//                                . ' ORDER BY etu_nom, etu_prenom');
         
         //Prepare une requete sql en nommant des parametres (plus rapide car en memoire)
         $oResultat = $oDb->prepare('SELECT *'

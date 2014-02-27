@@ -32,5 +32,6 @@
         
         ?>
         
+        <a href="AjouterPromo.php">Ajouter des promotions</a>
     </body>
 </html>
