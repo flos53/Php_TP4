@@ -50,7 +50,7 @@
         }
         echo '</form>';
         ?>
-        
+        <a href="AjouterEtudiant.php">Ajouter des étudiants</a>
         <p><a href="index.php">Retour</a></p>
         
     </body>

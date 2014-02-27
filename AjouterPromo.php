@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
+        <link href="style.css" rel="stylesheet" />
         <meta charset="UTF-8">
-        <title></title>
+        <title>Ajouter des Promotions</title>
     </head>
     <body>
-        <form method="post" action="" enctype="multipart/form-data">
+        <form method="post" action="CreerPromo.php" enctype="multipart/form-data">
             <div>
-            <label for="per_prenom">Votre prénom :</label>
-            <input id="per_prenom" type="text" name="prenom" />
-            </div>
+            <label for="pro_nom">Nom de la promotion :</label>
+            <input id="pro_nom" type="text" name="nom" />
+            </div>     
             
-            <div>
-            <label for="per_nom">Votre nom :</label>
-            <input id="per_nom" type="text" name="nom" />
-            </div>
+            <input type="submit" value="Creer">
+            
         </form>
     </body>
 </html>
